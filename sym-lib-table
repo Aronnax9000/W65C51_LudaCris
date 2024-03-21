@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "BB816")(type "KiCad")(uri "/home/alancanon9000/git/BB816/hardware/BB816.kicad_sym")(options "")(descr ""))
+  (lib (name "W65C51_LudaCris")(type "KiCad")(uri "${KIPRJMOD}/W65C51_LudaCris.kicad_sym")(options "")(descr ""))
+)

@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Footprints")(type "KiCad")(uri "/home/alancanon9000/git/BB816/hardware/Footprints.pretty")(options "")(descr ""))
+)
