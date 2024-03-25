@@ -1,11 +1,13 @@
 GAL22V10 ; Low GAL
 W65C51N_LudaCris_LowGAL
+;
 ; Pin Definitions
-; 22V10 PDIP Pin Number
-;       1   2   3   4   5           6  7         8            9  10  11  12
+;
+; Pin Number
+;      1   2   3   4   5         6  7        8           9  10  11  12
 /TXSTART CR0 CR1 CR2 CR3 /CTLREGWR NC /BAUDCLK /TXCOMPLETE  NC  NC GND 
 ;
-; 22V10 PDIP Pin Number
+; Pin Number
 ;13 14   15        16    17         18 19 20 21 22 23 24
 /OE /DSR /BAUDLOAD /CTEN CTLREGLOAD Q0 Q3 Q4 Q5 Q6 Q7 VCC 
 ;
