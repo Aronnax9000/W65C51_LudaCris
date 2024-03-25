@@ -1,0 +1,116 @@
+
+(rules PCB W65C51_LudaCris
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 2124)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.2)
+    )
+    (layer_rule In1.Cu
+      (active off)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.2)
+    )
+    (layer_rule In2.Cu
+      (active off)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.2)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.8)
+    )
+  )
+  (rule
+    (width 146.8)
+    (clear 203.2)
+    (clear 73.4 (type smd_to_turn_gap))
+    (clear 50.8 (type smd_smd))
+  )
+  (padstack "Via[0-3]_600:300_um"
+    (shape
+      (circle F.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-3]_600:300_um" "Via[0-3]_600:300_um" default
+  )
+  (via 
+    "Via[0-3]_600:300_um-kicad_default" "Via[0-3]_600:300_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-3]_600:300_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-3]_600:300_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 146.8)
+    )
+    (layer_rule In1.Cu
+      (rule 
+        (width 0.0) 
+      )
+    )
+    (layer_rule In2.Cu
+      (rule 
+        (width 0.0) 
+      )
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    VCC GND "/~{BAUD_CLK}" /~{CTS} /D7 /D3 /~{RTS} /TxD
+    /RxD /~{RES} /D4 /D0 /XTAL1 /D1 /D6 /~{DSR}
+    /D2 /D5 /CLK "/~{CTL_REG_WR}" "unconnected-(U2-~{Y2}-Pad13)" "unconnected-(U2-~{Y5}-Pad10)" "unconnected-(U2-~{Y7}-Pad7)" "/~{TX_START}"
+    "unconnected-(U2-~{Y6}-Pad9)" "unconnected-(U2-~{Y1}-Pad14)" "unconnected-(U2-~{Y4}-Pad11)" /CR4 /CR5 /CR1 /CR6 /CR7
+    "/CTL_REG_WR" /CR0 /CR2 /CR3 /~{CTEN} /Q4 /Q3 "/~{BAUD_LOAD}"
+    /Q0 /Q6 /Q7 /Q5 "/~{TX_COMPLETE}" /Q10 /Q9 /Q8
+    /Q15 "unconnected-(U5-I{slash}O-Pad15)" "unconnected-(U5-I{slash}O-Pad14)" /Q14 /Q11 /Q12 /Q13 "unconnected-(U6-MAX{slash}MIN-Pad12)"
+    "Net-(U6-~{RCO})" "unconnected-(U6-Qb-Pad2)" "unconnected-(U6-Qd-Pad7)" "unconnected-(U6-Qa-Pad3)" "unconnected-(U6-Qc-Pad6)" "unconnected-(U7-Qc-Pad6)" "unconnected-(U7-Qb-Pad2)" "unconnected-(U7-Qd-Pad7)"
+    "unconnected-(U7-MAX{slash}MIN-Pad12)" "Net-(U7-~{RCO})" "unconnected-(U7-Qa-Pad3)" "unconnected-(U8-MAX{slash}MIN-Pad12)" "unconnected-(U8-Qb-Pad2)" "unconnected-(U8-Qc-Pad6)" "unconnected-(U8-Qd-Pad7)" "Net-(U8-~{RCO})"
+    "unconnected-(U8-Qa-Pad3)" "unconnected-(U9-Qd-Pad7)" "unconnected-(U9-Qb-Pad2)" "unconnected-(U9-Qc-Pad6)" "unconnected-(U9-MAX{slash}MIN-Pad12)" "unconnected-(U9-Qa-Pad3)" "Net-(U10-S1)" "Net-(U10-S2)"
+    "Net-(U10-S4)" "unconnected-(U10-C4-Pad9)" "Net-(U10-S3)" "unconnected-(U11-Qa-Pad3)" "unconnected-(U11-Qd-Pad7)" "unconnected-(U11-Qc-Pad6)" "unconnected-(U11-Qb-Pad2)" "unconnected-(U11-MAX{slash}MIN-Pad12)"
+    /R~{W} /~{IRQ} /~{CS2} /CS1 /RS0 /RxC /RS1 /XTAL2
+    /~{DTR} /~{DCD}
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 146.8)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
