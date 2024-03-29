@@ -44,6 +44,8 @@ Two GALs are programmed for the purpose of providing the countdown timers with t
 ;Q5  1111                     = 1111
 ;Q4  0000                     = 0000
 ;Q3  0100                     = 0100
-;Q2  Always 0                 = NA
-;Q1  Always 0                 = NA
+;Q2  Always 0                 = Not mapped by PLD
+;Q1  Always 0                 = Not mapped by PLD
 ;Q0  0011                     = 0011
+
+

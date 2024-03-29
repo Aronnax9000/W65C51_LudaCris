@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 2124)
+    (start_pass_no 2088)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -103,7 +103,8 @@
     "unconnected-(U8-Qa-Pad3)" "unconnected-(U9-Qd-Pad7)" "unconnected-(U9-Qb-Pad2)" "unconnected-(U9-Qc-Pad6)" "unconnected-(U9-MAX{slash}MIN-Pad12)" "unconnected-(U9-Qa-Pad3)" "Net-(U10-S1)" "Net-(U10-S2)"
     "Net-(U10-S4)" "unconnected-(U10-C4-Pad9)" "Net-(U10-S3)" "unconnected-(U11-Qa-Pad3)" "unconnected-(U11-Qd-Pad7)" "unconnected-(U11-Qc-Pad6)" "unconnected-(U11-Qb-Pad2)" "unconnected-(U11-MAX{slash}MIN-Pad12)"
     /R~{W} /~{IRQ} /~{CS2} /CS1 /RS0 /RxC /RS1 /XTAL2
-    /~{DTR} /~{DCD}
+    /~{DTR} /~{DCD} "Net-(RN1-R7)" "Net-(RN1-R5)" "Net-(RN1-R4)" "Net-(RN1-R1)" "Net-(RN1-R2)" "Net-(RN1-R6)"
+    "Net-(RN1-R3)" "Net-(RN1-R8)" "/CTL_REG_LOAD"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule

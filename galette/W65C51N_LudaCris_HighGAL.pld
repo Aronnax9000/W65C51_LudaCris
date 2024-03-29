@@ -18,3 +18,5 @@ Q10 = /CR3 *  CR2 * /CR1 * /CR0  +  /CR3 *  CR2 *  CR1 *  CR0  +   CR3 * /CR2 * 
 Q9  =  CR3 * /CR2 * /CR1 * /CR0  +   CR3 * /CR2 * /CR1
 Q8  = /CR3 * /CR2 *  CR1 *  CR0  +  /CR3 *  CR2 * /CR1 * /CR0  +   CR3 * /CR2 *  CR1 * /CR0  +   CR3 *  CR2 * /CR1
 
+GAL22V10 ; Low GAL
+
